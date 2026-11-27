@@ -6,9 +6,9 @@ import { Mail, ArrowUpRight, CheckCircle2, Globe } from "lucide-react";
 import { profile } from "@/data/profile";
 
 export const metadata: Metadata = {
-  title: "About & Perspective",
+  title: "About Me",
   description:
-    "Biography, creative philosophy, and representation for cinematographer & director Kamso Nondi based in Lagos, Nigeria.",
+    "About Kamsochukwu Nnodi, a video editor and visual storyteller based in Lagos, Nigeria.",
 };
 
 export default function AboutPage() {
@@ -54,10 +54,10 @@ export default function AboutPage() {
         <div className="lg:col-span-7 flex flex-col gap-8">
           <div>
             <span className="font-mono text-xs uppercase tracking-[0.3em] text-accent-gold">
-              Cinematographer / Director
+              {profile.title}
             </span>
             <h1 className="font-serif text-4xl sm:text-6xl text-text-primary mt-2 leading-tight">
-              Capturing the texture of light and human emotion.
+              About Me
             </h1>
           </div>
 
@@ -79,7 +79,7 @@ export default function AboutPage() {
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-accent-gold hover:bg-accent-gold-light text-background font-mono text-xs font-semibold uppercase tracking-widest transition-all duration-300 shadow-xl hover:scale-105"
             >
               <Mail className="w-4 h-4" />
-              <span>Contact Kamso Directly</span>
+              <span>Contact Kamsochukwu Directly</span>
             </Link>
 
             <Link

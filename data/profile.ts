@@ -1,8 +1,8 @@
 import { DirectorProfile } from "@/types/project";
 
 export const profile: DirectorProfile = {
-  name: "KAMSO NONDI",
-  title: "Director & Cinematographer",
+  name: "Kamsochukwu Nnodi",
+  title: "Video Editor | Visual Storyteller",
   location: "Lagos, Nigeria",
   availability: "Available for Commissions & Worldwide Travel",
   showreelUrl: "/videos/video-one.mp4",
@@ -11,11 +11,13 @@ export const profile: DirectorProfile = {
   heroStatement:
     "Crafting visceral, light-sculpted motion pictures across narrative, commercial, and editorial cinema.",
   statement:
-    "Light is not merely illumination—it is rhythm, emotion, and texture. I believe every camera movement must earn its right to exist, serving the subtext of the frame.",
+    "A good edit doesn’t just show you what happened. It makes you feel why it mattered.",
   longBio: [
-    "Kamso Nondi is a filmmaker and cinematographer based in Lagos, Nigeria, working globally across narrative features, high-impact commercials, music videos, and fashion films.",
-    "Her visual style combines rich textural lighting, grounded human emotion, and dynamic camera choreography—moving effortlessly between high-end digital cinema formats (ARRI, RED, Sony Venice) and tactile analog celluloid.",
-    "Collaborating with leading creative agencies, global brands, and independent visionaries, Kamso brings a distinct, contemporary African visual language to the world stage.",
+    "Hi, I’m Kamsochukwu, a video editor who genuinely enjoys turning a pile of clips into something that actually feels like a story.",
+    "I turn raw footage into videos that are clear, engaging, and worth watching.",
+    "Whether it’s a talking head video, social media content, podcast, brand story, or something completely different, I focus on making every cut, transition, sound, and frame serve the story.",
+    "I’m interested in the little things that make an edit work: the timing of a cut, the right sound effect, a well-placed caption, a change in pacing, or that one visual that makes everything click.",
+    "My approach is simple: make it look good, make it feel good, and most importantly, make it make sense.",
   ],
   portraitUrl: "/images/profile-img.jpeg",
   studioImageUrl:

@@ -1,9 +1,9 @@
 export type ProjectCategory =
-  | "Commercial"
-  | "Narrative"
-  | "Music Video"
-  | "Fashion"
-  | "Documentary";
+  | "Branded"
+  | "AI Video"
+  | "Social"
+  | "Documentary"
+  | "Fashion";
 
 export interface Credit {
   role: string;
@@ -34,6 +34,8 @@ export interface Project {
   title: string;
   client: string;
   category: ProjectCategory;
+  /** Additional categories this project should also appear under in the Work filters. */
+  extraCategories?: ProjectCategory[];
   year: number;
   duration: string;
   aspectRatio: string; // e.g. "2.39:1", "16:9", "4:3"

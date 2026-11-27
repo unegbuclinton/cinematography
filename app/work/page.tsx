@@ -12,12 +12,15 @@ import { Project, ProjectCategory } from "@/types/project";
 
 const categories: ("All" | ProjectCategory)[] = [
   "All",
-  "Commercial",
-  "Narrative",
-  "Music Video",
-  "Fashion",
+  "Branded",
+  "AI Video",
+  "Social",
   "Documentary",
+  "Fashion",
 ];
+
+const inCategory = (p: Project, cat: ProjectCategory) =>
+  p.category === cat || (p.extraCategories ?? []).includes(cat);
 
 export default function WorkPage() {
   const [activeCategory, setActiveCategory] = useState<"All" | ProjectCategory>(
@@ -31,7 +34,7 @@ export default function WorkPage() {
   const filteredProjects =
     activeCategory === "All"
       ? projects
-      : projects.filter((p) => p.category === activeCategory);
+      : projects.filter((p) => inCategory(p, activeCategory));
 
   return (
     <div className="pt-32 md:pt-40 pb-32 max-w-7xl mx-auto px-6 md:px-12 min-h-screen flex flex-col">
@@ -39,14 +42,14 @@ export default function WorkPage() {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-border-subtle pb-10">
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-accent-gold">
-            Archive & Filmography
+            Editing & Visual Storytelling
           </span>
           <h1 className="font-serif text-4xl sm:text-6xl text-text-primary mt-2">
             Selected Works
           </h1>
           <p className="font-sans text-sm md:text-base text-text-secondary mt-3 max-w-xl">
-            A curated index of commercials, narrative films, music videos, and
-            editorial fashion pieces photographed worldwide.
+            A collection of work exploring video editing, visual storytelling,
+            AI-generated visuals, and creative content.
           </p>
         </div>
 
@@ -86,7 +89,7 @@ export default function WorkPage() {
           const count =
             cat === "All"
               ? projects.length
-              : projects.filter((p) => p.category === cat).length;
+              : projects.filter((p) => inCategory(p, cat)).length;
 
           return (
             <button
