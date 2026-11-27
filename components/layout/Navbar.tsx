@@ -52,10 +52,10 @@ export default function Navbar() {
             className="group flex flex-col items-start focus:outline-none"
           >
             <span className="font-serif text-lg md:text-xl tracking-[0.2em] font-medium text-text-primary group-hover:text-accent-gold transition-colors duration-300">
-              KAMSO NONDI
+              {profile.name}
             </span>
             <span className="font-mono text-[9px] md:text-[10px] tracking-[0.25em] text-text-muted uppercase group-hover:text-text-secondary transition-colors">
-              Cinematographer / Director
+              {profile.title}
             </span>
           </Link>
 

@@ -95,7 +95,7 @@ export default function HomePage() {
                   {profile.name}
                 </div>
                 <div className="text-text-muted mt-0.5">
-                  Director of Photography • {profile.location}
+                  {profile.title} • {profile.location}
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function HomePage() {
           <div className="lg:col-span-7 flex flex-col gap-6 md:gap-8">
             <div className="flex items-center gap-2 text-accent-gold font-mono text-xs uppercase tracking-widest">
               <Disc className="w-3.5 h-3.5 animate-spin" />
-              <span>Directing Perspective</span>
+              <span>About Me</span>
             </div>
 
             <blockquote className="font-serif text-2xl md:text-4xl text-text-primary font-normal leading-snug">

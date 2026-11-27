@@ -68,7 +68,7 @@ export default function ContactPage() {
                 Brief Received
               </h3>
               <p className="font-sans text-sm md:text-base text-text-secondary max-w-md">
-                Thank you for reaching out. Kamso and the production office will
+                Thank you for reaching out. Kamsochukwu will
                 review your project details and respond within 24 hours.
               </p>
               <button

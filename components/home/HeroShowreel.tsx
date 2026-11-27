@@ -53,7 +53,7 @@ export default function HeroShowreel() {
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-accent-gold animate-ping" />
               <span className="uppercase text-text-secondary">
-                Cinematography & Directing
+                Visual Storytelling & Direction
               </span>
             </div>
             <div className="hidden sm:block text-right text-text-muted">

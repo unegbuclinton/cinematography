@@ -27,9 +27,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${project.title} — ${project.client}`,
-    description: `${project.tagline} Cinematography by Kamso Nondi for ${project.client}. Shot on ${project.specs.camera}.`,
+    description: `${project.tagline} Edited by Kamsochukwu Nnodi for ${project.client}.`,
     openGraph: {
-      title: `${project.title} | Kamso Nondi Cinematography`,
+      title: `${project.title} | Kamsochukwu Nnodi`,
       description: project.synopsis,
       images: [
         {

@@ -155,7 +155,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-4 text-center sm:text-right">
             <span>
-              © {new Date().getFullYear()} KAMSO NONDI. All rights reserved.
+              © {new Date().getFullYear()} KAMSOCHUKWU NNODI. All rights reserved.
             </span>
           </div>
         </div>
